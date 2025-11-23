@@ -1,0 +1,2 @@
+Shallow > Not copy the refrences indeed it points to the same refrence .
+Deep > Also copies the refrences like a copy of refrence and change to one dont influent other refrences >>
