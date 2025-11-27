@@ -4,9 +4,11 @@ public class AdaptorDP {
 
     public static void main(String[] args) {
 
-        AppleCharger charger = new Cha
+        // we don't have apple > kaa > charger object !!! only android charger is avail > use "Adapter" >>>
+//        AppleCharger charger = new ChargerXYZ();
 
-        Iphone13 iphone13 = new Iphone13();
+        AppleCharger charger = new AdapterCharger(new DkCharger());
+        Iphone13 iphone13 = new Iphone13(charger);
 
         iphone13.chargeIphone();
     }
